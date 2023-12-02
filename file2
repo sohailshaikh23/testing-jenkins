@@ -1,9 +1,5 @@
-total 12K
-drwxrwxr-x 3 ubuntu ubuntu 4.0K Dec  2 09:23 .
-drwxr-x--- 5 ubuntu ubuntu 4.0K Dec  2 09:33 ..
-drwxrwxr-x 8 ubuntu ubuntu 4.0K Dec  2 09:24 .git
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 09:23 file1
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 09:34 file2
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 09:23 file3
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 09:23 file4
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 09:23 file5
+file1
+file2
+file3
+file4
+file5
