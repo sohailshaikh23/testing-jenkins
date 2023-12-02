@@ -1,0 +1,7 @@
+total 8.0K
+-rw-rw-r-- 1 ubuntu ubuntu   0 Dec  2 11:59 file1
+-rw-rw-r-- 1 ubuntu ubuntu   0 Dec  2 11:59 file2
+-rw-rw-r-- 1 ubuntu ubuntu   0 Dec  2 11:59 file4
+-rw-rw-r-- 1 ubuntu ubuntu 313 Dec  2 12:02 file3
+-rwxrwxr-x 1 ubuntu ubuntu 337 Dec  2 12:04 hook.sh
+-rw-rw-r-- 1 ubuntu ubuntu   0 Dec  2 12:05 file5
