@@ -1,10 +1,10 @@
-total 24
-drwxrwxr-x 3 ubuntu ubuntu 4096 Dec  2 11:52 ./
-drwxr-x--- 5 ubuntu ubuntu 4096 Dec  2 11:52 ../
-drwxrwxr-x 8 ubuntu ubuntu 4096 Dec  2 11:48 .git/
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 11:53 file1
--rw-rw-r-- 1 ubuntu ubuntu    6 Dec  2 11:20 file2
--rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 10:46 file3
--rw-rw-r-- 1 ubuntu ubuntu  154 Dec  2 11:47 file4
+total 24K
 -rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 10:46 file5
--rwxrwxrwx 1 ubuntu ubuntu  293 Dec  2 11:52 sh.sh*
+-rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 10:46 file3
+-rw-rw-r-- 1 ubuntu ubuntu    6 Dec  2 11:20 file2
+-rw-rw-r-- 1 ubuntu ubuntu  154 Dec  2 11:47 file4
+-rwxrwxrwx 1 ubuntu ubuntu  293 Dec  2 11:52 sh.sh
+drwxr-x--- 5 ubuntu ubuntu 4.0K Dec  2 11:52 ..
+drwxrwxr-x 3 ubuntu ubuntu 4.0K Dec  2 11:52 .
+drwxrwxr-x 8 ubuntu ubuntu 4.0K Dec  2 11:53 .git
+-rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 11:54 file1
