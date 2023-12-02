@@ -2,5 +2,10 @@
 FILE=$(cat /home/ubuntu/project/.git/refs/heads/master)
 CID=$FILE
 
-echo $(git diff-tree --no-commit-id --name-only -r $CID )
+filelist=$(git diff-tree --no-commit-id --name-only -r $CID )
+if [[ $filelist == *"File2"* ]]; then
+        # call the URL according to your build trigger config
+    touch /home/ubuntu/jenkins_particular_file
+
+fi
 

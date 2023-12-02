@@ -1,20 +1,10 @@
-Configure your Jenkins job to Trigger builds remotely.
-
-This enables a build trigger URL in the form of JENKINS_URL/job/MYJOB/build?token=TOKEN_NAME. You have to specify the token name yourself.
-
-Configure a git post-receive hook on your repo to call that trigger.
-
-The script for the hook is usually under .git/hooks/post-receive. The post-receive hook runs after the entire process is completed and can be used to update other services or notify users.
-
-A post-receive hook gets its arguments from stdin, in the form <oldrev> <newrev> <refname>.
-
-You can retrieve the file list from the new HEAD commit and then only proceed to the next step if it includes File2. Something like this (not tested):
-
-#!/bin/bash
-while read oldrev newrev refname
-do
-    # list of changed files for a commit
-    filelist=$(git diff-tree --no-commit-id --name-only -r $newrev)
-    if [[ $filelist == *"File2"* ]]; then
-        # call the URL according to your build trigger config
-    fi
+total 24
+drwxrwxr-x 3 ubuntu ubuntu 4096 Dec  2 11:52 ./
+drwxr-x--- 5 ubuntu ubuntu 4096 Dec  2 11:52 ../
+drwxrwxr-x 8 ubuntu ubuntu 4096 Dec  2 11:48 .git/
+-rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 11:53 file1
+-rw-rw-r-- 1 ubuntu ubuntu    6 Dec  2 11:20 file2
+-rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 10:46 file3
+-rw-rw-r-- 1 ubuntu ubuntu  154 Dec  2 11:47 file4
+-rw-rw-r-- 1 ubuntu ubuntu    0 Dec  2 10:46 file5
+-rwxrwxrwx 1 ubuntu ubuntu  293 Dec  2 11:52 sh.sh*
