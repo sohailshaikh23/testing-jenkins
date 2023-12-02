@@ -1,4 +1,28 @@
-file1
+hat could cause my git pre- and post- commit hooks to not run?
+
+(please note: this question is not a duplicate; the answer to each of the other questions is either chmod +x or "don't have a file extension", and neither are the issue here)
+
+They are executable:
+
+$ ls -alh .git/hooks/*-commit
+-rwxr-xr-x  … .git/hooks/post-commit
+-rwxr-xr-x  … .git/hooks/pre-commit
+
+And this is the content of each of them:
+
+#!/bin/sh
+echo "$0 IS RUNNING"
+exit 1
+
+Running them manually works:
+
+$ .git/hooks/pre-commit
+.git/hooks/pre-commit IS RUNNING
+
+But they aren't run by git on commit:
+
+$ git commit -am "Test hooks"
+[master d17c0f38] Test hooksfile1
 file2
 file3
 file4
